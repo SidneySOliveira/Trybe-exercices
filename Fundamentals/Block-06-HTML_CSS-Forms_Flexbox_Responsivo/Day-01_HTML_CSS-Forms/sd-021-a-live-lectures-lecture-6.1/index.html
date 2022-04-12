@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Submeter Palestra</title>
+  </head>
+  <body>
+    <header class="speaker-form-header">
+      <h1>Submeter Palestra</h1>
+      <p><em>Quer participar da nossa conferência? Preencha o formulário!</em></p>
+    </header>
+    <form action="paginaEnvio.html" method="get" class="speaker-form">
+      <div class="form-content">
+        <div class="line-content">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome">
+        </div>
+        <div class="line-content">
+          <fieldset class="legacy-form-row">
+            <legend>Tipo de Palestra</legend>
+            <input type="radio" name="tipo-palestra" id="tipo-1" value="sala">
+            <label for="tipo-1">Sala principal</label>
+            <input type="radio" name="tipo-palestra" id="tipo-2" value="workshop">
+            <label for="tipo-2">Workshop</label>
+          </fieldset>
+        </div>
+        <div class="line-content">
+          <label for="camiseta">Tamanho da camiseta</label>
+          <select name="camiseta" id="camiseta">
+            <option value="XG">Extra Grande</option>
+            <option value="G">Grande</option>
+            <option value="M">Média</option>
+            <option value="P">Pequena</option>
+          </select>
+        </div>
+        <div class="line-content">
+          <label for="resumo">Resumo</label>
+          <textarea name="resumo" id="resumo" cols="30" rows="10" maxlength="500"></textarea>
+          <span class="instructions">Descreva a sua palestra em 500 palavras ou menos!</span>
+        </div>
+        <div class="line-content">
+          <label for="disponibilidade">
+            <input type="checkbox" name="disponibilidade" id="disponibilidade"
+            value="disponibilidade-ok">
+            <span>Eu tenho disponibilidade para participar do evento nessa data!</span>
+          </label>
+        </div>
+        <div class="line-content">
+          <button type="submit" class="btn-enviar" >Enviar</button>
+        </div>
+      </div>
+    </form>
+    
+  </body>
+</html>
+
+

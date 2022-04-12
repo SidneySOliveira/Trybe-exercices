@@ -5,23 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="" method="GET">
-        <label for="input-email">Email:
-            <input type="email" name="input-email" id="input-email" placeholder="Digitte seu email" required autocomplete="off" autofocus>
-        </label>
+    <head class="speaker-form-header">
+        <h1>Formulário</h1>
+    </head>
+<form id="form-1" class="form" action="" method="get">
+    <div class="line-content options">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+        <label for="Email">Email</label>
+        <input type="email" id="Email">
+    </div>
+    <div class="options">
+        <label for="Option01">Opção 01</label>
+        <input type="radio" name="Option" id="option01">
+        <label for="Option02">Opção 02</label>
+        <input type="radio" name="Option" id="option02">
+        <label for="Option03">Opção 03</label>
+        <input type="radio" name="Option" id="option03">
+        <label for="Option04">Opção 04</label>
+        <input type="radio" name="Option" id="option04">
+    </div>
+    <div class="classResp options">
+        <label for="resposta">Espaço para digitar a resposta</label>
         <br>
-        <label for="password">Senha:
-            <input type="password" name="password" id="password" placeholder="Digite sua senha" required> 
-        </label>
+        <textarea name="resposta" id="resposta" cols="30" rows="10" maxlength="500"></textarea>
+    </div>
+    <div>
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data">
+
+    </div>
+    <div>
+        <label for="check1">Concordo 1</label>
+        <input type="checkbox" name="check" id="check1">
         <br>
-        <label for="check">
-            <input type="checkbox" id="check">Lembre-me
-        </label>
-        <br>
-        <button>Logar</button>
-    </form>
+        <label for="check2">Concordo 2</label>
+        <input type="checkbox" name="check" id="check2">
+    </div>
+</form>
 </body>
 </html>
