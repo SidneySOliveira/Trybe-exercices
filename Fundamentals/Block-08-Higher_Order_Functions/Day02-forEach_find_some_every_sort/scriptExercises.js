@@ -18,7 +18,7 @@ function smallerName(book) {
 
   console.log(smallerName(books));
 //   console.log(books[0].name.length);
-*/
+
 // 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
   
   function getNamedBook(books, nameLength) {
@@ -26,3 +26,11 @@ function smallerName(book) {
   }
 
   console.log(getNamedBook(books, 26));
+
+  */
+//  4 - Ordene os livros por data de lançamento em ordem decrescente.
+function booksOrderedByReleaseYearDesc(books) {
+    return books.sort((a, b) => b.releaseYear - a.releaseYear)  
+  }
+
+  console.log(booksOrderedByReleaseYearDesc(books))
