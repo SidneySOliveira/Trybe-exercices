@@ -1,0 +1,19 @@
+{
+  "name": "exercicio_aula-dia01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "read": "node ./src/exercises/read_dates.js",
+    "select":"node ./src/exercises/selectCharacters.js",
+    "rm": "node ./src/exercises/rm_characters.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bmi": "node bmi.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
