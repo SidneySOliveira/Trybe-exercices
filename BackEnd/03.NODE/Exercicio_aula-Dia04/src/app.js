@@ -34,7 +34,7 @@ const existingId = (req, res, next) => {
   }
 };
 
-app.get('/teams', (req, res) => res.json(teams));
+app.get('/teams', (req, res) => res.json(team));
 
 app.get('/teams/:id', existingId, (req, res) => {
   const id = Number(req.params.id);
